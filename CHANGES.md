@@ -1,4 +1,4 @@
-# CHANGES for ansi-to-browser-log
+# CHANGES for
 
 ## 0.1.0
 
