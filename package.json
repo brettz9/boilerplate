@@ -8,7 +8,7 @@
     "start": "static -p 8050",
     "eslint": "eslint --ext=js,md,html .",
     "test:unit": "mocha --require esm test/**",
-    "test": "npm run eslint && testcafe chrome test/ui/*.js"
+    "test": "npm run eslint"
   },
   "repository": {
     "type": "git",
@@ -48,7 +48,6 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-sonarjs": "^0.5.0",
     "eslint-plugin-standard": "^4.0.1",
-    "eslint-plugin-testcafe": "^0.2.1",
     "eslint-plugin-unicorn": "^14.0.1",
     "json-server": "^0.15.1",
     "mocha": "^6.2.2",
