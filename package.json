@@ -8,7 +8,7 @@
     "start": "static -p 8050",
     "eslint": "eslint --ext=js,md,html .",
     "test:unit": "mocha --require esm test/**",
-    "test": "npm run eslint"
+    "test": "npm run eslint && npm run test:unit"
   },
   "repository": {
     "type": "git",
