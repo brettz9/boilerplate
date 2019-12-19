@@ -1,21 +1,35 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es6": true
+    env: {
+        browser: true,
+        es6: true
     },
-    "settings": {
-        "polyfills": [
+    settings: {
+        polyfills: [
         ]
     },
-    "extends": ["ash-nazg/sauron", "plugin:node/script-recommended"],
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
+    extends: ['ash-nazg/sauron', 'plugin:node/recommended-script'],
+    globals: {
+        Atomics: 'readonly',
+        SharedArrayBuffer: 'readonly'
     },
-    "parserOptions": {
-        "ecmaVersion": 2018,
-        "sourceType": "module"
+    overrides: [
+      {
+        files: '*.md',
+        rules: {
+
+        }
+      },
+      {
+        files: '*.html',
+        rules: {
+          'import/unambiguous': 0
+        }
+      }
+    ],
+    parserOptions: {
+        ecmaVersion: 2018,
+        sourceType: 'module'
     },
-    "rules": {
+    rules: {
     }
 };
